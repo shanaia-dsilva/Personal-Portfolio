@@ -53,6 +53,12 @@ a:hover {
   color: #c197a1;
 }
 
+.download-btn {
+  color:whitesmoke;
+  letter-spacing: 1px;
+  margin-top: 1.2rem;
+  font-weight: lighter;
+}
 #welcome-section {
   min-height: 100vh;
   display: flex;
