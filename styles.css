@@ -16,96 +16,6 @@ body:hover {
   background-color: #5e3e41;
   
 }
-/* .design-bg {
-  position: absolute;
-  top: 30%;
-  left: -80%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, #0e131d, #f28482);
-  border-radius: 50%;
-  
-  z-index: -1;
-} */
-
-.bg-bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.bg-bubbles div {
-  position: absolute;
-  left: -200px; /* Start fully off-screen to the left */
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(68deg, #20060c, #0e131d, #20060c);
-  border-radius: 50%;
-  animation: floatSide 18s linear infinite;
-  opacity: 0.6;
-}
-
-/* Bubbles at different heights */
-.bg-bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.bg-bubbles div {
-  position: absolute;
-  left: -200px; /* Start fully off-screen to the left */
-  width: 800px;
-  height: 80px;
-  background: radial-gradient(#fdac98,#20060c,  #20060c);
-  filter: blur(80px);
-  border-radius: 50%;
-  animation: floatSide 18s linear infinite;
-  opacity: 0.6;
-}
-
-/* Bubbles at different heights */
-.bg-bubbles div:nth-child(1) {
-  top: 93%;
-  animation-delay: 0s;
-}
-.bg-bubbles div:nth-child(2) {
-  top: 95%;
-  width: 800px;
-  height: 100px;
-  animation-delay: 2s;
-  animation-duration: 20s;
-}
-.bg-bubbles div:nth-child(3) {
-  top: 92%;
-  width: 1200px;
-  height: 120px;
-  animation-delay: 4s;
-  animation-duration: 22s;
-}
-
-@keyframes floatSide {
-  0% {
-    transform: translateX(0) scale(1);
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateX(130vw) scale(1.5); /* Moves across entire screen */
-    opacity: 0;
-  }
-}
-
 
 
 #navbar {
@@ -277,24 +187,6 @@ p {
   padding: 0 1rem;
   box-sizing: border-box;
 }
-/* .cert-card {
-  background: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.cert-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-} */
-
 
 #skills-section {
   min-height: 100vh;
