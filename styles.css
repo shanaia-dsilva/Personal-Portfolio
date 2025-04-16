@@ -10,7 +10,13 @@ html {
 
 body {
   background: linear-gradient(68deg, #20060c, #0e131d, #20060c);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  @font-face {
+    font-family: 'Mileast Italic';
+    src: url('Mileast Italic.otf') format('otf');
+}
+
+body {
+    font-family: 'Mileast Italic', verdana, sans-serif;
 }
 body:hover {
   background-color: #5e3e41;
