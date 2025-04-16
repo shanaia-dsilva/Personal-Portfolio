@@ -10,14 +10,17 @@ html {
 
 body {
   background: linear-gradient(68deg, #20060c, #0e131d, #20060c);
-  @font-face {
-    font-family: 'Mileast Italic';
-    src: url('Mileast Italic.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Mileast Italic';
+  src: url('Mileast Italic.otf') format('opentype'); 
 }
 
 body {
-    font-family: verdana, 'Mileast Italic', sans-serif;
+  font-family: Verdana, 'Mileast Italic', sans-serif; 
 }
+
 body:hover {
   background-color: #5e3e41;
   
