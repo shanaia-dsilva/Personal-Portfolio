@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-family: 'Mileast Italic', verdana, sans-serif;
+    font-family: verdana, 'Mileast Italic', sans-serif;
 }
 body:hover {
   background-color: #5e3e41;
