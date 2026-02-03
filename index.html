@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shanaia's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chroma-grid.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+
 <body>
     <nav id="navbar">
         <ul id="nav-list">
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects-section">Work</a></li>
-            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#skills-section">Overview</a></li>
         </ul>
     </nav>
     <div class="design-bg"></div>
     <div class="bg-bubbles">
-        <div></div><div></div><div></div>
-      </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <section id="welcome-section">
         <div class="profile-section">
             <div class="about">
-                <img src="Shanaiaprofile.jpeg" alt="myPic" id="profile-img" >
+                <img src="Shanaiaprofile.jpeg" alt="myPic" id="profile-img">
             </div>
             <div class="about">
                 <h1>👋 I'm Shanaia D'Silva</h1><br>
                 <p>Computer Science<br>(Data Science Specialization)<br>BTech. Student <br><br>
-                📍 Manipal Institue of Technology, Blr<br><br>
-                🚀 Data Scientist | Developer | ML explorer</p>
-                <p>I build with code and curiosity. From neural networks to web apps, I love turning data into intuitive tools and insights.</p>
+                    📍 Manipal Institue of Technology, Blr<br><br>
+                    🚀 Data Scientist | Developer | ML explorer</p>
+                <p>I build with code and curiosity. From neural networks to web apps, I love turning data into intuitive
+                    tools and insights.</p>
             </div>
         </div>
 
-    <h2>Let's Work Together...</h2>
+        <h2>Let's Work Together...</h2>
         <div class="contact-links">
             <a href="https://github.com/shanaia-dsilva" class="contact-btn" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/shanaia-dsilva/" class="contact-btn" target="_blank">Linkedin</a>
@@ -46,75 +53,146 @@
 
     <section id="projects-section">
         <h2>These are some of my projects</h2>
-        <div class="project-tile">
-            <a href="https://www.kaggle.com/code/shanaiadsilva/audiobooks-optimizing-advertisements-ml" target="_blank" class="project-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aAKm74V8mrBSCkL_h2Bhz_GVkja7IjRca3FWwCRXTgb9H8_QZslLs1IoaAhaYz48V_E&usqp=CAU" alt="Audio Books prediction" class="project-img">
-                <p class="project-title">Customer purchase prediction</p>
-            </a>
-            <a href="https://colab.research.google.com/drive/1Ecao2sswJVWQF0m4hITblz5BDG1bRnd-?usp=sharing" target="_blank" class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/MNIST_dataset_example.png/640px-MNIST_dataset_example.png" alt="MNIST Dataset" class="project-img">
-                <p class="project-title">Digit Recognition using MNIST</p>
-            </a>
-            <a href="https://www.kaggle.com/code/shanaiadsilva/housingprices" target="_blank" class="project-card">
-                <img src="https://media.istockphoto.com/id/1450257988/vector/housing-price-rising-up.jpg?s=612x612&w=0&k=20&c=ZX2RDOCJL3FHMjgirJXE68oOfA6jp5iZNhAP8_QA3ik=" alt="Housing Prices" class="project-img">
-                <p class="project-title">Housing Price Prediction</p>
-            </a>
-            <a href="https://shanaia-dsilva.github.io/calculator/" target="_blank" class="project-card">
-                <img src="calculator.png" alt="Calculator" class="project-img">
-                <p class="project-title">Calculator</p>
-            </a>
-        </div>  
+
+        <!-- ChromaGrid for Projects -->
+        <div class="chroma-grid-wrapper">
+            <div class="chroma-grid" data-radius="300" data-columns="4">
+                <article class="chroma-card"
+                    onclick="window.open('https://www.kaggle.com/code/shanaiadsilva/audiobooks-optimizing-advertisements-ml', '_blank')"
+                    style="--card-border: #4F46E5; --card-gradient: linear-gradient(145deg, #4F46E5, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aAKm74V8mrBSCkL_h2Bhz_GVkja7IjRca3FWwCRXTgb9H8_QZslLs1IoaAhaYz48V_E&usqp=CAU"
+                            alt="Audio Books" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Customer Purchase Prediction</h3>
+                        <p class="role">ML model for audiobook customer analysis</p>
+                    </footer>
+                </article>
+
+                <article class="chroma-card"
+                    onclick="window.open('https://colab.research.google.com/drive/1Ecao2sswJVWQF0m4hITblz5BDG1bRnd-?usp=sharing', '_blank')"
+                    style="--card-border: #F59E0B; --card-gradient: linear-gradient(165deg, #F59E0B, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/MNIST_dataset_example.png/640px-MNIST_dataset_example.png"
+                            alt="MNIST Dataset" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Digit Recognition using MNIST</h3>
+                        <p class="role">Deep learning digit recognition demo</p>
+                    </footer>
+                </article>
+
+                <article class="chroma-card"
+                    onclick="window.open('https://www.kaggle.com/code/shanaiadsilva/housingprices', '_blank')"
+                    style="--card-border: #EF4444; --card-gradient: linear-gradient(195deg, #EF4444, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="https://media.istockphoto.com/id/1450257988/vector/housing-price-rising-up.jpg?s=612x612&w=0&k=20&c=ZX2RDOCJL3FHMjgirJXE68oOfA6jp5iZNhAP8_QA3ik="
+                            alt="Housing Prices" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Housing Price Prediction</h3>
+                        <p class="role">ML model for real estate pricing</p>
+                    </footer>
+                </article>
+
+                <article class="chroma-card"
+                    onclick="window.open('https://shanaia-dsilva.github.io/calculator/', '_blank')"
+                    style="--card-border: #10B981; --card-gradient: linear-gradient(210deg, #10B981, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="calculator.png" alt="Calculator" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Calculator</h3>
+                        <p class="role">A functional calculator web app</p>
+                    </footer>
+                </article>
+            </div>
+        </div>
 
         <h2>Some of my certifications</h2>
-        <div class="cert-tile">
-        <a href="https://coursera.org/share/21caa6e61231e14348b672dca2278959" target="_blank" class="project-card">
-            <img src="google.png" alt="Calculator" class="project-img">
-            <p class="project-title">Foundations: Data, Data, Everywhere<br>Google</p>
-        </a>
-        <a href="https://coursera.org/share/d27231119b5f04fc61287b4519286b11" target="_blank" class="project-card">
-            <img src="pandas.jpeg" alt="pandas" class="project-img">
-            <p class="project-title">Python for Data Analysis: Pandas & NumPy<br>Coursera Project Network</p>
-        </a>
-        <a href="https://www.udemy.com/certificate/UC-2f3a10c2-2637-444e-b87e-ab65bd6b6a8f/" target="_blank" class="project-card">
-            <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-2f3a10c2-2637-444e-b87e-ab65bd6b6a8f.jpg" alt="pandas" class="project-img">
-            <p class="project-title">Complete Data Science Training:<br>Math, Statistics, Python, Advanced Statistics in Python, Machine and Deep Learning</p>
-        </a>
-        </div>      
+
+        <!-- ChromaGrid for Certifications -->
+        <div class="chroma-grid-wrapper">
+            <div class="chroma-grid" data-radius="300" data-columns="3">
+                <article class="chroma-card"
+                    onclick="window.open('https://coursera.org/share/21caa6e61231e14348b672dca2278959', '_blank')"
+                    style="--card-border: #8B5CF6; --card-gradient: linear-gradient(225deg, #8B5CF6, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="google.png" alt="Google Data Course" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Foundations: Data, Data, Everywhere</h3>
+                        <span class="handle">Google</span>
+                        <p class="role">Professional Certificate</p>
+                    </footer>
+                </article>
+
+                <article class="chroma-card"
+                    onclick="window.open('https://coursera.org/share/d27231119b5f04fc61287b4519286b11', '_blank')"
+                    style="--card-border: #06B6D4; --card-gradient: linear-gradient(135deg, #06B6D4, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="pandas.jpeg" alt="Pandas Course" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Python for Data Analysis: Pandas & NumPy</h3>
+                        <span class="handle">Coursera Project Network</span>
+                        <p class="role">Professional Certificate</p>
+                    </footer>
+                </article>
+
+                <article class="chroma-card"
+                    onclick="window.open('https://www.udemy.com/certificate/UC-2f3a10c2-2637-444e-b87e-ab65bd6b6a8f/', '_blank')"
+                    style="--card-border: #EC4899; --card-gradient: linear-gradient(180deg, #EC4899, #000); cursor: pointer;">
+                    <div class="chroma-img-wrapper">
+                        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-2f3a10c2-2637-444e-b87e-ab65bd6b6a8f.jpg"
+                            alt="Udemy Course" loading="lazy">
+                    </div>
+                    <footer class="chroma-info">
+                        <h3 class="name">Complete Data Science Training</h3>
+                        <span class="handle">Udemy</span>
+                        <p class="role">Python, ML, Deep Learning</p>
+                    </footer>
+                </article>
+            </div>
+        </div>
     </section>
 
     <section id="skills-section">
         <div class="skills-list">
-          <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <ul>
-              <li>Java</li>
-              <li>C</li>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Machine Learning</h3>
-            <ul>
-              <li>Pandas</li>
-              <li>Numpy</li>
-              <li>Tensorflow</li>
-              <li>Scikit-Learn</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Data Visualization</h3>
-            <ul>
-              <li>Matplotlib</li>
-              <li>Seaborn</li>
-              <li>MS Excel</li>
-            </ul>
-          </div>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Pandas</li>
+                    <li>Numpy</li>
+                    <li>Tensorflow</li>
+                    <li>Scikit-Learn</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Visualization</h3>
+                <ul>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>MS Excel</li>
+                </ul>
+            </div>
         </div>
-      </section>
-      
+    </section>
+
 
     <script src="script.js"></script>
+    <script src="chroma-grid.js"></script>
 </body>
+
 </html>
